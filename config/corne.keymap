@@ -4,28 +4,13 @@
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
-#define C 3
-#define D 4
 
 / {
-  combos {
-    compatible = "zmk,combos";
-    
-    combo_copyleft {
-      timeout-ms = <50>;
-      key-positions = <>;
-      layers = <>;
-      bindings = <&hm LSFT>; 
-    };
-  };
-
   behaviors {
     hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS";
       #binding-cells = <2>;
       tapping-term-ms = <250>;
-      quick_tap_ms = <0>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
@@ -41,25 +26,13 @@
 
     Lower_layer {
       bindings = <
-        &kp TAB &kp ASTERISK &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp DOT &hm LGUI LEFT_BRACKET &hm LCTRL LEFT_BRACE &hm RCTRL RIGHT_BRACE &hm RGUI RIGHT_BRACKET &kp F3 &kp BACKSPACE &kp MINUS &kp PLUS &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp EQUAL &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &hm LALT LEFT_SHIFT &hm LCTRL LEFT &kp LEFT_SHIFT &kp SLASH &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &hm LGUI LEFT &hm LALT LEFT &hm RALT RIGHT &hm RGUI RIGHT &hm RALT RIGHT_SHIFT &hm RCTRL RIGHT &kp LEFT_GUI &tog BASE &kp RETURN &kp SPACE &tog RAISE &kp RIGHT_ALT 
+        &kp TAB &kp ASTERISK &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp DOT &hm LGUI LEFT_BRACKET &hm LCTRL LEFT_BRACE &hm RCTRL RIGHT_BRACE &hm RGUI RIGHT_BRACKET &kp F3 &kp BACKSPACE &kp MINUS &kp PLUS &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp EQUAL &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &hm LALT LEFT_SHIFT &hm LCTRL LEFT &kp LEFT_SHIFT &kp SLASH &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &hm LGUI LEFT &hm LALT LEFT &hm RALT RIGHT &hm RGUI RIGHT &hm RALT RIGHT_SHIFT &hm RCTRL RIGHT &kp LEFT_GUI &tog BASE &kp SPACE &kp RETURN &tog RAISE &kp RIGHT_ALT 
       >;
     };
 
     Raise_layer {
       bindings = <
         &kp TAB &kp F3 &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp F4 &kp CARET &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp AMPERSAND &kp BACKSPACE &kp LEFT_CONTROL &kp C_BRIGHTNESS_INC &kp DOLLAR &kp PERCENT &kp CARET &kp C_VOLUME_UP &kp MINUS &kp EQUAL &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BACKSLASH &kp GRAVE &kp LEFT_SHIFT &kp C_BRIGHTNESS_DEC &kp AMPERSAND &kp ASTERISK &kp LEFT_PARENTHESIS &kp C_VOLUME_DOWN &kp UNDERSCORE &kp PLUS &kp LEFT_BRACE &kp RIGHT_BRACE &kp PIPE &kp TILDE &kp LEFT_GUI &trans &kp SPACE &kp RETURN &trans &kp RIGHT_ALT 
-      >;
-    };
-
-    c_layer {
-      bindings = <
-        &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
-      >;
-    };
-
-    d_layer {
-      bindings = <
-        &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
       >;
     };
 
