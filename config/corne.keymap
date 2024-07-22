@@ -20,7 +20,7 @@
       bindings = <
         &kp TAB &kp ASTERISK &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp DOT &kp LGUI(LEFT_BRACKET) &kp LCTRL(LEFT_BRACE) &kp RCTRL(RIGHT_BRACE) &kp RGUI(RIGHT_BRACKET) &kp F3 &kp BACKSPACE    &trans &trans &trans &trans &trans &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                                    &kp LGUI     &to BASE       &kp SPACE      &kp RET  &trans   &kp RALT
       >;
     };
 
